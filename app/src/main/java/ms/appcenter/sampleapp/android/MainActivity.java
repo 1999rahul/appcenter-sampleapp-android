@@ -3,6 +3,10 @@ package ms.appcenter.sampleapp.android;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     Analytics.class, Crashes.class, Distribute.class);
         } else {
             // Otherwise use the hardcoded string value here
-            AppCenter.start(getApplication(), "283d9891-ec24-46dc-bb82-2859031ba680",
+            AppCenter.start(getApplication(), "79cc8e36-30f7-46ee-baf6-d4a91a8a6345",
                     Analytics.class, Crashes.class, Distribute.class);
         }
 
